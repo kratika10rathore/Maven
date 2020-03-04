@@ -4,21 +4,21 @@ pipeline{
         stage("Compile stage"){
           steps{
              withMaven(maven: 'Maven'){
-                 bat "mvn -f C:\Program Files (x86)\Jenkins\workspace\Pipeline_proj\maven-project clean compile"
+                 bat "mvn -f maven-project/pom.xml clean compile"
              }
           }
        }
        stage("Testing stage"){
         steps{
              withMaven(maven: 'Maven'){
-                 bat "mvn  -f C:\Program Files (x86)\Jenkins\workspace\Pipeline_proj\maven-project test"
+                 bat "mvn  -f maven-project/pom.xml test"
              }
           }
        }
        stage("Deploy stage"){
         steps{
              withMaven(maven: 'Maven'){
-                 bat "mvn -f C:\Program Files (x86)\Jenkins\workspace\Pipeline_proj\maven-project deploy"
+                 bat "mvn -f maven-project/pom.xml deploy"
              }
           }
         }
