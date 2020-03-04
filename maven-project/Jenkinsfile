@@ -4,21 +4,21 @@ pipeline{
         stage("Compile stage"){
           steps{
              withMaven(maven: 'Maven'){
-                 bat "mvn clean compile"
+                 bat "mvn -f C:\Program Files (x86)\Jenkins\workspace\Pipeline_proj\maven-project clean compile"
              }
           }
        }
        stage("Testing stage"){
         steps{
              withMaven(maven: 'Maven'){
-                 bat "mvn test"
+                 bat "mvn  -f C:\Program Files (x86)\Jenkins\workspace\Pipeline_proj\maven-project test"
              }
           }
        }
        stage("Deploy stage"){
         steps{
              withMaven(maven: 'Maven'){
-                 bat "mvn deploy"
+                 bat "mvn -f C:\Program Files (x86)\Jenkins\workspace\Pipeline_proj\maven-project deploy"
              }
           }
         }
