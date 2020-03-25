@@ -2,7 +2,7 @@ package com.kratika;
 
 public class Krats {
 	public String Sample(){
-		 "Hello Kratika";
+		 System.out.print("Hello Kratika");
 	}
 
 }
