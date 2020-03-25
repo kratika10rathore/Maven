@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class KratsTest {
+public class SampleMathClass{
 
 	@Test
 	public void testAddNumbers() {
