@@ -4,11 +4,11 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class SampleMathClass{
+public class KratsTest{
 
 	@Test
 	public void testAddNumbers() {
-           SampleMath myMath = new SampleMath();
+           Krats myMath = new Krats();
            int result = myMath.addNumbers(10, 3);
    
   // Compare expected to result from
